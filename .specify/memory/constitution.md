@@ -1,14 +1,14 @@
-# Physical & Humanoid Robotics Authoring Constitution
-
 <!--
-- Version: 1.0.0
+- Version: 1.1.0
 - Ratified: 2025-12-05
-- Description: Initial constitution defining the core principles, standards, and governance for the Physical & Humanoid Robotics book project.
+- Last Amended: 2025-12-07
+- Description: Version 1.1.0 introduces a new principle VIII, mandating that all chapters be detailed and simplified, with a strong emphasis on using diagrams for clearer explanations. This enhances the book's educational effectiveness.
 - Changes:
-  - Established initial principles for content, design, and technical standards.
-  - Defined writing, formatting, and content creation rules.
-  - Set governance, versioning, and attribution policies.
+  - Added "Principle VIII: Simplified Depth and Visual Storytelling".
+  - Incremented version from 1.0.0 to 1.1.0.
 -->
+
+# Physical & Humanoid Robotics Authoring Constitution
 
 ## Core Principles
 
@@ -49,6 +49,9 @@ The content MUST be accessible to a global audience and prepared for future enha
 To ensure ease of access and a seamless user experience, all chapters MUST be easily discoverable.
 -   **Navigation Bar**: Every new chapter must be added to the main navigation sidebar.
 -   **Home Page**: The home page must be updated to include a link to every new chapter, providing a central point of entry for all content.
+
+### VIII. Simplified Depth and Visual Storytelling
+Every chapter MUST be both detailed and simplified. Complex topics should be broken down into easy-to-understand explanations without losing technical depth. To enhance comprehension, diagrams, flowcharts, and visual aids MUST be used extensively to illustrate concepts, processes, and architectures.
 
 ## Writing and Content Standards
 
@@ -96,4 +99,4 @@ All published content under this project MUST provide clear attribution. The fol
 -   **Portfolio**: [https://thebestaryan.vercel.app](https://thebestaryan.vercel.app)
 -   **LinkedIn**: [https://linkedin.com/in/muhammad-aryan](https://linkedin.com/in/muhammad-aryan)
 
-**Version**: 1.0.0 | **Ratified**: 2025-12-05 | **Last Amended**: 2025-12-05
+**Version**: 1.1.0 | **Ratified**: 2025-12-05 | **Last Amended**: 2025-12-07
