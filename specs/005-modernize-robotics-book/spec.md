@@ -32,14 +32,15 @@ As a reader, I want a book structure that covers modern robotics topics, so that
     - Human-Robot Interaction (HRI)
     - Robotics Simulation and Tools (ROS & Gazebo)
     - Ethics and Future of Robotics
-- **FR-002**: The book MUST be divided into three parts:
-    - Part 1: Fundamentals of Robotics
-    - Part 2: Advanced Robotics Systems
-    - Part 3: Humanoid and Applied Robotics
-- **FR-003**: The chapters MUST be organized according to the new structure.
+- **FR-002**: The book MUST be divided into three parts, each targeting a different audience:
+    - **Part 1: Foundations for Beginners** (9 chapters)
+    - **Part 2: University Level & Early Professionals** (10 chapters)
+    - **Part 3: Advanced Topics for Researchers** (10 chapters)
+- **FR-003**: The chapters MUST be organized according to the new three-part structure.
 - **FR-004**: The content of the new chapters MUST be created.
 - **FR-005**: The book MUST be written in a way that is easy to understand for the target audience.
 - **FR-006**: The book MUST use diagrams and visual aids to explain complex topics, ensuring clarity and simplicity.
+- **FR-008**: Each chapter MUST include theoretical content, diagrams, code examples, and exercises to provide a comprehensive learning experience.
 
 ## Success Criteria *(mandatory)*
 
@@ -48,3 +49,13 @@ As a reader, I want a book structure that covers modern robotics topics, so that
 - **SC-001**: The updated book structure should be reflected in the table of contents.
 - **SC-002**: All new chapters must be present in the book.
 - **SC-003**: The book's content should be accurate and up-to-date with the latest advancements in robotics.
+
+## Clarifications
+
+### Session 2025-12-07
+
+- Q: Is kitab mein ghalatiyon ya kami ki report karne ka kya tareeqa hoga? → A: Aik "Feedback" page ya section shamil karein.
+
+### Edge Cases
+
+- **FR-007**: Readers MUST have a clear channel to provide feedback, report errors, or suggest improvements for the book's content. This channel should be easily accessible from within the book's platform.
