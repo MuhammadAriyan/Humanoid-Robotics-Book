@@ -4,6 +4,9 @@
  * work well for content-centric websites.
  */
 
+/* Import Glassmorphism Styles */
+@import '../styles/glassmorphism.css';
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #6366f1;
