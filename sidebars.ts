@@ -28,6 +28,33 @@ const sidebars: SidebarsConfig = {
         'intro-to-robotics/sections/1.2-history-of-robotics',
       ],
     },
+    {
+      type: 'category',
+      label: 'Part 1: Foundations for Beginners',
+      items: [
+        'part1-foundations-for-beginners/introduction-to-robotics',
+        'part1-foundations-for-beginners/history-of-robotics',
+        'part1-foundations-for-beginners/types-of-robots',
+        'part1-foundations-for-beginners/basic-components',
+        'part1-foundations-for-beginners/introduction-to-robot-movement',
+        'part1-foundations-for-beginners/introduction-to-control-systems',
+        'part1-foundations-for-beginners/building-a-simple-robot',
+        'part1-foundations-for-beginners/introduction-to-simulation-tools',
+        'part1-foundations-for-beginners/basic-robotics-safety',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Part 2: University Level',
+      items: [
+        'part2-university-level/advanced-kinematics-and-dynamics',
+        'part2-university-level/control-system-design',
+        'part2-university-level/sensors-and-perception',
+        'part2-university-level/actuators-and-grippers',
+        'part2-university-level/robot-vision-and-perception',
+        'part2-university-level/ai-in-robotics',
+      ],
+    },
   ],
 };
 
