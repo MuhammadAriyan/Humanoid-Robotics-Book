@@ -1,8 +1,8 @@
 ---
-title: "Chapter X: [Title]"
-sidebar_position: X
-description: "[≤120 char summary]"
-tags: ["humanoid-robotics", "tag2", "tag3"]
+title: "Chapter Writing Guide"
+sidebar_position: 1
+description: "Complete guide for writing effective robotics chapters with proper structure and academic rigor"
+tags: ["humanoid-robotics", "writing-guide", "chapter-structure"]
 ---
 
 # Chapter X: [Title]
