@@ -18,56 +18,15 @@ const sidebars: SidebarsConfig = {
 
   // But you can create a sidebar manually
   tutorialSidebar: [
-    'intro',
     {
       type: 'category',
-      label: '🤖 Physical Humanoid Robotics Crash Course',
+      label: 'Physical Humanoid Robotics Crash Course',
       items: [
-        'humanoid-robotics-course/introduction-to-humanoid-robotics',
-        'humanoid-robotics-course/sensors-and-perception',
-        'humanoid-robotics-course/actuators-and-movement',
-        'humanoid-robotics-course/control-systems',
-        'humanoid-robotics-course/path-planning-and-navigation',
-      ],
-    },
-    {
-      type: 'category',
-      label: '📖 Tutorial Basics',
-      items: [
-        'tutorial-basics/create-a-document',
-        'tutorial-basics/create-a-page',
-        'tutorial-basics/create-a-blog-post',
-        'tutorial-basics/deploy-your-site',
-        'tutorial-basics/markdown-features',
-        'tutorial-basics/congratulations',
-      ],
-    },
-    {
-      type: 'category',
-      label: '⚙️ Tutorial Extras',
-      items: [
-        'tutorial-extras/manage-docs-versions',
-        'tutorial-extras/translate-your-site',
-      ],
-    },
-    {
-      type: 'category',
-      label: '📖 Tutorial Basics',
-      items: [
-        'tutorial-basics/create-a-document',
-        'tutorial-basics/create-a-page',
-        'tutorial-basics/create-a-blog-post',
-        'tutorial-basics/deploy-your-site',
-        'tutorial-basics/markdown-features',
-        'tutorial-basics/congratulations',
-      ],
-    },
-    {
-      type: 'category',
-      label: '⚙️ Tutorial Extras',
-      items: [
-        'tutorial-extras/manage-docs-versions',
-        'tutorial-extras/translate-your-site',
+        'humanoid-robotics-course/01-introduction-to-humanoid-robotics',
+        'humanoid-robotics-course/02-sensors-and-perception',
+        'humanoid-robotics-course/03-actuators-and-movement',
+        'humanoid-robotics-course/04-control-systems',
+        'humanoid-robotics-course/05-path-planning-and-navigation',
       ],
     },
   ],
