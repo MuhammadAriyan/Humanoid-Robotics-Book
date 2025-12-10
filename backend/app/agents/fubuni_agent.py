@@ -21,12 +21,12 @@ load_dotenv()
 
 # Use OpenRouter API with Nova model
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
-
+OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL", "https://openrouter.ai/api/v1")
 # Always use OpenRouter (production ready)
 if OPENROUTER_API_KEY:
     # Use OpenRouter API key
     api_key = OPENROUTER_API_KEY
-    base_url = settings.openai_base_url
+    base_url = OPENAI_BASE_URL
     model_name = "amazon/nova-2-lite-v1:free"
     use_mock = False
 else:
