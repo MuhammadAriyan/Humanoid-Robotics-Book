@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-humanoid-robotics-course/textbook-outline" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Physical AI &amp; Humanoid Robotics: A Coding-Focused Textbook | Ary&#x27;s Physical &amp; Humanoid Robotics</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://MuhammadAriyan.github.io/Humanoid-Robotics-Book/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://MuhammadAriyan.github.io/Humanoid-Robotics-Book/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://MuhammadAriyan.github.io/Humanoid-Robotics-Book/docs/humanoid-robotics-course/textbook-outline"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Physical AI &amp; Humanoid Robotics: A Coding-Focused Textbook | Ary&#x27;s Physical &amp; Humanoid Robotics"><meta data-rh="true" name="description" content="Course Overview"><meta data-rh="true" property="og:description" content="Course Overview"><link data-rh="true" rel="icon" href="/Humanoid-Robotics-Book/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://MuhammadAriyan.github.io/Humanoid-Robotics-Book/docs/humanoid-robotics-course/textbook-outline"><link data-rh="true" rel="alternate" href="https://MuhammadAriyan.github.io/Humanoid-Robotics-Book/docs/humanoid-robotics-course/textbook-outline" hreflang="en"><link data-rh="true" rel="alternate" href="https://MuhammadAriyan.github.io/Humanoid-Robotics-Book/docs/humanoid-robotics-course/textbook-outline" hreflang="x-default"><link rel="stylesheet" href="/Humanoid-Robotics-Book/assets/css/styles.e960907a.css">
+<script src="/Humanoid-Robotics-Book/assets/js/runtime~main.1f439a96.js" defer="defer"></script>
+<script src="/Humanoid-Robotics-Book/assets/js/main.00bae9f5.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/Humanoid-Robotics-Book/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/Humanoid-Robotics-Book/"><div class="navbar__logo"><img src="/Humanoid-Robotics-Book/img/logo.svg" alt="Ary&#x27;s Physical Humanoid Robotics Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/Humanoid-Robotics-Book/img/logo.svg" alt="Ary&#x27;s Physical Humanoid Robotics Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Ary&#x27;s Physical Humanoid Robotics</b></a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/MuhammadAriyan/Ary-s-Physical-Humanoid-Robotics" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><main class="docMainContainer_TBSr docMainContainerEnhanced_lQrH"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Physical AI &amp; Humanoid Robotics: A Coding-Focused Textbook</h1></header>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="course-overview">Course Overview<a href="#course-overview" class="hash-link" aria-label="Direct link to Course Overview" title="Direct link to Course Overview" translate="no">​</a></h2>
+<p>This comprehensive textbook covers Physical AI and Humanoid Robotics with a focus on practical coding, agent development, and real-world applications. No mathematics required - just pure programming and AI concepts.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="chapter-1-introduction-to-physical-ai--humanoid-robotics">Chapter 1: Introduction to Physical AI &amp; Humanoid Robotics<a href="#chapter-1-introduction-to-physical-ai--humanoid-robotics" class="hash-link" aria-label="Direct link to Chapter 1: Introduction to Physical AI &amp; Humanoid Robotics" title="Direct link to Chapter 1: Introduction to Physical AI &amp; Humanoid Robotics" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="11-what-is-physical-ai">1.1 What is Physical AI?<a href="#11-what-is-physical-ai" class="hash-link" aria-label="Direct link to 1.1 What is Physical AI?" title="Direct link to 1.1 What is Physical AI?" translate="no">​</a></h3>
+<ul>
+<li class="">Definition: AI systems that interact with the physical world</li>
+<li class="">Difference between digital AI and physical AI</li>
+<li class="">Real-world applications and examples</li>
+<li class="">Evolution from traditional robotics to Physical AI</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="12-humanoid-robots-overview">1.2 Humanoid Robots Overview<a href="#12-humanoid-robots-overview" class="hash-link" aria-label="Direct link to 1.2 Humanoid Robots Overview" title="Direct link to 1.2 Humanoid Robots Overview" translate="no">​</a></h3>
+<ul>
+<li class="">Definition and key characteristics</li>
+<li class="">Current state of humanoid robotics</li>
+<li class="">Major players in the industry (Boston Dynamics, Tesla, NVIDIA)</li>
+<li class="">Real-world deployment examples</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="13-the-ai-robotics-integration">1.3 The AI-Robotics Integration<a href="#13-the-ai-robotics-integration" class="hash-link" aria-label="Direct link to 1.3 The AI-Robotics Integration" title="Direct link to 1.3 The AI-Robotics Integration" translate="no">​</a></h3>
+<ul>
+<li class="">How AI transforms traditional robotics</li>
+<li class="">From pre-programmed to adaptive systems</li>
+<li class="">The role of large language models in robotics</li>
+<li class="">Vision-language models in physical systems</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="14-development-environment-setup">1.4 Development Environment Setup<a href="#14-development-environment-setup" class="hash-link" aria-label="Direct link to 1.4 Development Environment Setup" title="Direct link to 1.4 Development Environment Setup" translate="no">​</a></h3>
+<ul>
+<li class="">Programming languages for robotics (Python, C++, Rust)</li>
+<li class="">Essential frameworks and libraries</li>
+<li class="">Simulation environments (Gazebo, Isaac Sim, Webots)</li>
+<li class="">Development tools and IDEs</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="chapter-2-sensors-and-perception-systems">Chapter 2: Sensors and Perception Systems<a href="#chapter-2-sensors-and-perception-systems" class="hash-link" aria-label="Direct link to Chapter 2: Sensors and Perception Systems" title="Direct link to Chapter 2: Sensors and Perception Systems" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="21-visual-perception-systems">2.1 Visual Perception Systems<a href="#21-visual-perception-systems" class="hash-link" aria-label="Direct link to 2.1 Visual Perception Systems" title="Direct link to 2.1 Visual Perception Systems" translate="no">​</a></h3>
+<ul>
+<li class="">Camera types and configurations</li>
+<li class="">Computer vision fundamentals</li>
+<li class="">Object detection and recognition</li>
+<li class="">Depth sensing and 3D vision</li>
+<li class="">Real-time image processing</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="22-audio-and-speech-perception">2.2 Audio and Speech Perception<a href="#22-audio-and-speech-perception" class="hash-link" aria-label="Direct link to 2.2 Audio and Speech Perception" title="Direct link to 2.2 Audio and Speech Perception" translate="no">​</a></h3>
+<ul>
+<li class="">Microphone arrays and sound localization</li>
+<li class="">Speech recognition systems</li>
+<li class="">Audio processing for human-robot interaction</li>
+<li class="">Noise reduction and filtering</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="23-proprioceptive-sensors">2.3 Proprioceptive Sensors<a href="#23-proprioceptive-sensors" class="hash-link" aria-label="Direct link to 2.3 Proprioceptive Sensors" title="Direct link to 2.3 Proprioceptive Sensors" translate="no">​</a></h3>
+<ul>
+<li class="">Joint encoders and position sensing</li>
+<li class="">Force/torque sensors</li>
+<li class="">Inertial Measurement Units (IMUs)</li>
+<li class="">Balance and orientation sensing</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="24-environmental-sensing">2.4 Environmental Sensing<a href="#24-environmental-sensing" class="hash-link" aria-label="Direct link to 2.4 Environmental Sensing" title="Direct link to 2.4 Environmental Sensing" translate="no">​</a></h3>
+<ul>
+<li class="">LiDAR and distance measurement</li>
+<li class="">Ultrasonic sensors</li>
+<li class="">Temperature and environmental monitoring</li>
+<li class="">Tactile sensing and touch detection</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="25-sensor-fusion-and-data-processing">2.5 Sensor Fusion and Data Processing<a href="#25-sensor-fusion-and-data-processing" class="hash-link" aria-label="Direct link to 2.5 Sensor Fusion and Data Processing" title="Direct link to 2.5 Sensor Fusion and Data Processing" translate="no">​</a></h3>
+<ul>
+<li class="">Combining multiple sensor inputs</li>
+<li class="">Real-time data processing pipelines</li>
+<li class="">Noise filtering and signal processing</li>
+<li class="">Sensor calibration and validation</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="chapter-3-actuators-and-movement-systems">Chapter 3: Actuators and Movement Systems<a href="#chapter-3-actuators-and-movement-systems" class="hash-link" aria-label="Direct link to Chapter 3: Actuators and Movement Systems" title="Direct link to Chapter 3: Actuators and Movement Systems" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="31-electric-motors-and-servos">3.1 Electric Motors and Servos<a href="#31-electric-motors-and-servos" class="hash-link" aria-label="Direct link to 3.1 Electric Motors and Servos" title="Direct link to 3.1 Electric Motors and Servos" translate="no">​</a></h3>
+<ul>
+<li class="">DC motors, stepper motors, and servo motors</li>
+<li class="">Motor control fundamentals</li>
+<li class="">Position and velocity control</li>
+<li class="">Power management and efficiency</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="32-hydraulic-and-pneumatic-systems">3.2 Hydraulic and Pneumatic Systems<a href="#32-hydraulic-and-pneumatic-systems" class="hash-link" aria-label="Direct link to 3.2 Hydraulic and Pneumatic Systems" title="Direct link to 3.2 Hydraulic and Pneumatic Systems" translate="no">​</a></h3>
+<ul>
+<li class="">Fluid power actuators</li>
+<li class="">Pressure control systems</li>
+<li class="">Advantages for heavy lifting</li>
+<li class="">Safety considerations</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="33-advanced-actuation-technologies">3.3 Advanced Actuation Technologies<a href="#33-advanced-actuation-technologies" class="hash-link" aria-label="Direct link to 3.3 Advanced Actuation Technologies" title="Direct link to 3.3 Advanced Actuation Technologies" translate="no">​</a></h3>
+<ul>
+<li class="">Shape memory alloys</li>
+<li class="">Electroactive polymers</li>
+<li class="">Artificial muscles</li>
+<li class="">Soft robotics actuators</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="34-joint-design-and-kinematics">3.4 Joint Design and Kinematics<a href="#34-joint-design-and-kinematics" class="hash-link" aria-label="Direct link to 3.4 Joint Design and Kinematics" title="Direct link to 3.4 Joint Design and Kinematics" translate="no">​</a></h3>
+<ul>
+<li class="">Robot joint types and configurations</li>
+<li class="">Range of motion and constraints</li>
+<li class="">Joint coordination and synchronization</li>
+<li class="">End-effector design</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="35-movement-control-programming">3.5 Movement Control Programming<a href="#35-movement-control-programming" class="hash-link" aria-label="Direct link to 3.5 Movement Control Programming" title="Direct link to 3.5 Movement Control Programming" translate="no">​</a></h3>
+<ul>
+<li class="">Motor control libraries and APIs</li>
+<li class="">Real-time control loops</li>
+<li class="">Smooth motion trajectories</li>
+<li class="">Movement safety protocols</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="chapter-4-control-systems-and-decision-making">Chapter 4: Control Systems and Decision Making<a href="#chapter-4-control-systems-and-decision-making" class="hash-link" aria-label="Direct link to Chapter 4: Control Systems and Decision Making" title="Direct link to Chapter 4: Control Systems and Decision Making" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="41-robot-operating-system-ros">4.1 Robot Operating System (ROS)<a href="#41-robot-operating-system-ros" class="hash-link" aria-label="Direct link to 4.1 Robot Operating System (ROS)" title="Direct link to 4.1 Robot Operating System (ROS)" translate="no">​</a></h3>
+<ul>
+<li class="">ROS architecture and concepts</li>
+<li class="">Nodes, topics, and services</li>
+<li class="">Message passing and communication</li>
+<li class="">ROS2 vs ROS comparison</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="42-behavior-trees-and-decision-making">4.2 Behavior Trees and Decision Making<a href="#42-behavior-trees-and-decision-making" class="hash-link" aria-label="Direct link to 4.2 Behavior Trees and Decision Making" title="Direct link to 4.2 Behavior Trees and Decision Making" translate="no">​</a></h3>
+<ul>
+<li class="">Behavior tree fundamentals</li>
+<li class="">Action nodes, condition nodes, and control nodes</li>
+<li class="">Complex behavior composition</li>
+<li class="">Visual behavior tree editors</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="43-state-machines-and-sequential-logic">4.3 State Machines and Sequential Logic<a href="#43-state-machines-and-sequential-logic" class="hash-link" aria-label="Direct link to 4.3 State Machines and Sequential Logic" title="Direct link to 4.3 State Machines and Sequential Logic" translate="no">​</a></h3>
+<ul>
+<li class="">Finite state machines for robot behavior</li>
+<li class="">State transitions and triggers</li>
+<li class="">Hierarchical state machines</li>
+<li class="">Implementation patterns</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="44-real-time-control-systems">4.4 Real-time Control Systems<a href="#44-real-time-control-systems" class="hash-link" aria-label="Direct link to 4.4 Real-time Control Systems" title="Direct link to 4.4 Real-time Control Systems" translate="no">​</a></h3>
+<ul>
+<li class="">Real-time operating systems concepts</li>
+<li class="">Priority-based task scheduling</li>
+<li class="">Interrupt handling and response times</li>
+<li class="">Performance optimization</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="45-error-handling-and-recovery">4.5 Error Handling and Recovery<a href="#45-error-handling-and-recovery" class="hash-link" aria-label="Direct link to 4.5 Error Handling and Recovery" title="Direct link to 4.5 Error Handling and Recovery" translate="no">​</a></h3>
+<ul>
+<li class="">Fault detection and diagnosis</li>
+<li class="">Graceful degradation strategies</li>
+<li class="">Recovery behaviors</li>
+<li class="">Safety shutdown procedures</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="chapter-5-path-planning-and-navigation">Chapter 5: Path Planning and Navigation<a href="#chapter-5-path-planning-and-navigation" class="hash-link" aria-label="Direct link to Chapter 5: Path Planning and Navigation" title="Direct link to Chapter 5: Path Planning and Navigation" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="51-mapping-and-localization">5.1 Mapping and Localization<a href="#51-mapping-and-localization" class="hash-link" aria-label="Direct link to 5.1 Mapping and Localization" title="Direct link to 5.1 Mapping and Localization" translate="no">​</a></h3>
+<ul>
+<li class="">Simultaneous Localization and Mapping (SLAM)</li>
+<li class="">Occupancy grid maps</li>
+<li class="">Feature-based mapping</li>
+<li class="">Visual odometry</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="52-global-path-planning">5.2 Global Path Planning<a href="#52-global-path-planning" class="hash-link" aria-label="Direct link to 5.2 Global Path Planning" title="Direct link to 5.2 Global Path Planning" translate="no">​</a></h3>
+<ul>
+<li class="">A* and Dijkstra&#x27;s algorithms</li>
+<li class="">RRT (Rapidly-exploring Random Trees)</li>
+<li class="">D* and dynamic replanning</li>
+<li class="">Path optimization techniques</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="53-local-navigation-and-obstacle-avoidance">5.3 Local Navigation and Obstacle Avoidance<a href="#53-local-navigation-and-obstacle-avoidance" class="hash-link" aria-label="Direct link to 5.3 Local Navigation and Obstacle Avoidance" title="Direct link to 5.3 Local Navigation and Obstacle Avoidance" translate="no">​</a></h3>
+<ul>
+<li class="">Dynamic Window Approach</li>
+<li class="">Artificial potential fields</li>
+<li class="">Velocity obstacles</li>
+<li class="">Real-time collision avoidance</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="54-navigation-stack-integration">5.4 Navigation Stack Integration<a href="#54-navigation-stack-integration" class="hash-link" aria-label="Direct link to 5.4 Navigation Stack Integration" title="Direct link to 5.4 Navigation Stack Integration" translate="no">​</a></h3>
+<ul>
+<li class="">ROS navigation stack</li>
+<li class="">Move Base configuration</li>
+<li class="">Costmap setup and tuning</li>
+<li class="">Navigation parameters</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="55-advanced-navigation-concepts">5.5 Advanced Navigation Concepts<a href="#55-advanced-navigation-concepts" class="hash-link" aria-label="Direct link to 5.5 Advanced Navigation Concepts" title="Direct link to 5.5 Advanced Navigation Concepts" translate="no">​</a></h3>
+<ul>
+<li class="">Multi-robot coordination</li>
+<li class="">Social navigation</li>
+<li class="">Terrain classification and adaptation</li>
+<li class="">Semantic navigation</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="chapter-6-agentic-ai-in-robotics">Chapter 6: Agentic AI in Robotics<a href="#chapter-6-agentic-ai-in-robotics" class="hash-link" aria-label="Direct link to Chapter 6: Agentic AI in Robotics" title="Direct link to Chapter 6: Agentic AI in Robotics" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="61-introduction-to-ai-agents">6.1 Introduction to AI Agents<a href="#61-introduction-to-ai-agents" class="hash-link" aria-label="Direct link to 6.1 Introduction to AI Agents" title="Direct link to 6.1 Introduction to AI Agents" translate="no">​</a></h3>
+<ul>
+<li class="">What defines an AI agent</li>
+<li class="">Reactive vs. deliberative agents</li>
+<li class="">Multi-agent systems</li>
+<li class="">Agent architectures</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="62-large-language-models-for-robotics">6.2 Large Language Models for Robotics<a href="#62-large-language-models-for-robotics" class="hash-link" aria-label="Direct link to 6.2 Large Language Models for Robotics" title="Direct link to 6.2 Large Language Models for Robotics" translate="no">​</a></h3>
+<ul>
+<li class="">LLM integration patterns</li>
+<li class="">Natural language understanding</li>
+<li class="">Task planning and decomposition</li>
+<li class="">Code generation for robot behaviors</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="63-vision-language-models">6.3 Vision-Language Models<a href="#63-vision-language-models" class="hash-link" aria-label="Direct link to 6.3 Vision-Language Models" title="Direct link to 6.3 Vision-Language Models" translate="no">​</a></h3>
+<ul>
+<li class="">VLM architectures and capabilities</li>
+<li class="">Visual reasoning for robots</li>
+<li class="">Grounding language in perception</li>
+<li class="">Multi-modal understanding</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="64-agentic-frameworks-for-robotics">6.4 Agentic Frameworks for Robotics<a href="#64-agentic-frameworks-for-robotics" class="hash-link" aria-label="Direct link to 6.4 Agentic Frameworks for Robotics" title="Direct link to 6.4 Agentic Frameworks for Robotics" translate="no">​</a></h3>
+<ul>
+<li class="">LangChain and LangGraph</li>
+<li class="">AutoGen and multi-agent systems</li>
+<li class="">Custom agent architectures</li>
+<li class="">Integration with robot middleware</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="65-learning-and-adaptation">6.5 Learning and Adaptation<a href="#65-learning-and-adaptation" class="hash-link" aria-label="Direct link to 6.5 Learning and Adaptation" title="Direct link to 6.5 Learning and Adaptation" translate="no">​</a></h3>
+<ul>
+<li class="">Reinforcement learning for robot skills</li>
+<li class="">Imitation learning from demonstration</li>
+<li class="">Continual learning systems</li>
+<li class="">Skill acquisition and retention</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="chapter-7-building-talking-ai-systems">Chapter 7: Building Talking AI Systems<a href="#chapter-7-building-talking-ai-systems" class="hash-link" aria-label="Direct link to Chapter 7: Building Talking AI Systems" title="Direct link to Chapter 7: Building Talking AI Systems" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="71-speech-recognition-fundamentals">7.1 Speech Recognition Fundamentals<a href="#71-speech-recognition-fundamentals" class="hash-link" aria-label="Direct link to 7.1 Speech Recognition Fundamentals" title="Direct link to 7.1 Speech Recognition Fundamentals" translate="no">​</a></h3>
+<ul>
+<li class="">Automatic Speech Recognition (ASR)</li>
+<li class="">Wake word detection</li>
+<li class="">Voice activity detection</li>
+<li class="">Real-time transcription</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="72-natural-language-understanding">7.2 Natural Language Understanding<a href="#72-natural-language-understanding" class="hash-link" aria-label="Direct link to 7.2 Natural Language Understanding" title="Direct link to 7.2 Natural Language Understanding" translate="no">​</a></h3>
+<ul>
+<li class="">Intent recognition</li>
+<li class="">Entity extraction</li>
+<li class="">Context management</li>
+<li class="">Dialogue state tracking</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="73-text-to-speech-systems">7.3 Text-to-Speech Systems<a href="#73-text-to-speech-systems" class="hash-link" aria-label="Direct link to 7.3 Text-to-Speech Systems" title="Direct link to 7.3 Text-to-Speech Systems" translate="no">​</a></h3>
+<ul>
+<li class="">Neural TTS architectures</li>
+<li class="">Voice cloning and customization</li>
+<li class="">Emotional speech synthesis</li>
+<li class="">Real-time voice generation</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="74-conversational-ai-architecture">7.4 Conversational AI Architecture<a href="#74-conversational-ai-architecture" class="hash-link" aria-label="Direct link to 7.4 Conversational AI Architecture" title="Direct link to 7.4 Conversational AI Architecture" translate="no">​</a></h3>
+<ul>
+<li class="">Turn-taking and dialogue management</li>
+<li class="">Context-aware responses</li>
+<li class="">Personality and style control</li>
+<li class="">Multi-modal conversation</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="75-voice-agent-implementation">7.5 Voice Agent Implementation<a href="#75-voice-agent-implementation" class="hash-link" aria-label="Direct link to 7.5 Voice Agent Implementation" title="Direct link to 7.5 Voice Agent Implementation" translate="no">​</a></h3>
+<ul>
+<li class="">Building a complete voice pipeline</li>
+<li class="">Low-latency processing</li>
+<li class="">Audio streaming and buffering</li>
+<li class="">Integration with robot actions</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="76-advanced-voice-features">7.6 Advanced Voice Features<a href="#76-advanced-voice-features" class="hash-link" aria-label="Direct link to 7.6 Advanced Voice Features" title="Direct link to 7.6 Advanced Voice Features" translate="no">​</a></h3>
+<ul>
+<li class="">Code-switching and multilingual support</li>
+<li class="">Prosody and intonation control</li>
+<li class="">Voice authentication and security</li>
+<li class="">Accessibility features</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="chapter-8-integration-and-practical-applications">Chapter 8: Integration and Practical Applications<a href="#chapter-8-integration-and-practical-applications" class="hash-link" aria-label="Direct link to Chapter 8: Integration and Practical Applications" title="Direct link to Chapter 8: Integration and Practical Applications" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="81-system-integration-patterns">8.1 System Integration Patterns<a href="#81-system-integration-patterns" class="hash-link" aria-label="Direct link to 8.1 System Integration Patterns" title="Direct link to 8.1 System Integration Patterns" translate="no">​</a></h3>
+<ul>
+<li class="">Modular architecture design</li>
+<li class="">API design and interfaces</li>
+<li class="">Data flow management</li>
+<li class="">System testing and validation</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="82-real-world-applications">8.2 Real-World Applications<a href="#82-real-world-applications" class="hash-link" aria-label="Direct link to 8.2 Real-World Applications" title="Direct link to 8.2 Real-World Applications" translate="no">​</a></h3>
+<ul>
+<li class="">Healthcare and assistive robotics</li>
+<li class="">Manufacturing and industry</li>
+<li class="">Service and hospitality</li>
+<li class="">Education and entertainment</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="83-deployment-and-maintenance">8.3 Deployment and Maintenance<a href="#83-deployment-and-maintenance" class="hash-link" aria-label="Direct link to 8.3 Deployment and Maintenance" title="Direct link to 8.3 Deployment and Maintenance" translate="no">​</a></h3>
+<ul>
+<li class="">Continuous integration and deployment</li>
+<li class="">Remote monitoring and updates</li>
+<li class="">Performance optimization</li>
+<li class="">Security considerations</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="84-ethical-considerations">8.4 Ethical Considerations<a href="#84-ethical-considerations" class="hash-link" aria-label="Direct link to 8.4 Ethical Considerations" title="Direct link to 8.4 Ethical Considerations" translate="no">​</a></h3>
+<ul>
+<li class="">Privacy and data protection</li>
+<li class="">Safety and reliability</li>
+<li class="">Human-robot interaction ethics</li>
+<li class="">Social impact assessment</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="85-future-trends-and-developments">8.5 Future Trends and Developments<a href="#85-future-trends-and-developments" class="hash-link" aria-label="Direct link to 8.5 Future Trends and Developments" title="Direct link to 8.5 Future Trends and Developments" translate="no">​</a></h3>
+<ul>
+<li class="">Embodied AI advancements</li>
+<li class="">Neuromorphic computing</li>
+<li class="">Quantum computing applications</li>
+<li class="">Next-generation robot platforms</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="appendix">Appendix<a href="#appendix" class="hash-link" aria-label="Direct link to Appendix" title="Direct link to Appendix" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="a-programming-resources">A. Programming Resources<a href="#a-programming-resources" class="hash-link" aria-label="Direct link to A. Programming Resources" title="Direct link to A. Programming Resources" translate="no">​</a></h3>
+<ul>
+<li class="">Python libraries for robotics</li>
+<li class="">C++ frameworks and tools</li>
+<li class="">Development environment setup</li>
+<li class="">Debugging and testing tools</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="b-hardware-specifications">B. Hardware Specifications<a href="#b-hardware-specifications" class="hash-link" aria-label="Direct link to B. Hardware Specifications" title="Direct link to B. Hardware Specifications" translate="no">​</a></h3>
+<ul>
+<li class="">Sensor selection guidelines</li>
+<li class="">Actuator specifications</li>
+<li class="">Computing hardware requirements</li>
+<li class="">Power system design</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="c-simulation-and-testing">C. Simulation and Testing<a href="#c-simulation-and-testing" class="hash-link" aria-label="Direct link to C. Simulation and Testing" title="Direct link to C. Simulation and Testing" translate="no">​</a></h3>
+<ul>
+<li class="">Simulation environment setup</li>
+<li class="">Unit testing for robot code</li>
+<li class="">Integration testing strategies</li>
+<li class="">Performance benchmarking</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="d-community-and-resources">D. Community and Resources<a href="#d-community-and-resources" class="hash-link" aria-label="Direct link to D. Community and Resources" title="Direct link to D. Community and Resources" translate="no">​</a></h3>
+<ul>
+<li class="">Open-source projects</li>
+<li class="">Research papers and publications</li>
+<li class="">Conferences and events</li>
+<li class="">Online learning platforms</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/humanoid-robotics-course/textbook-outline.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#course-overview" class="table-of-contents__link toc-highlight">Course Overview</a></li><li><a href="#chapter-1-introduction-to-physical-ai--humanoid-robotics" class="table-of-contents__link toc-highlight">Chapter 1: Introduction to Physical AI &amp; Humanoid Robotics</a><ul><li><a href="#11-what-is-physical-ai" class="table-of-contents__link toc-highlight">1.1 What is Physical AI?</a></li><li><a href="#12-humanoid-robots-overview" class="table-of-contents__link toc-highlight">1.2 Humanoid Robots Overview</a></li><li><a href="#13-the-ai-robotics-integration" class="table-of-contents__link toc-highlight">1.3 The AI-Robotics Integration</a></li><li><a href="#14-development-environment-setup" class="table-of-contents__link toc-highlight">1.4 Development Environment Setup</a></li></ul></li><li><a href="#chapter-2-sensors-and-perception-systems" class="table-of-contents__link toc-highlight">Chapter 2: Sensors and Perception Systems</a><ul><li><a href="#21-visual-perception-systems" class="table-of-contents__link toc-highlight">2.1 Visual Perception Systems</a></li><li><a href="#22-audio-and-speech-perception" class="table-of-contents__link toc-highlight">2.2 Audio and Speech Perception</a></li><li><a href="#23-proprioceptive-sensors" class="table-of-contents__link toc-highlight">2.3 Proprioceptive Sensors</a></li><li><a href="#24-environmental-sensing" class="table-of-contents__link toc-highlight">2.4 Environmental Sensing</a></li><li><a href="#25-sensor-fusion-and-data-processing" class="table-of-contents__link toc-highlight">2.5 Sensor Fusion and Data Processing</a></li></ul></li><li><a href="#chapter-3-actuators-and-movement-systems" class="table-of-contents__link toc-highlight">Chapter 3: Actuators and Movement Systems</a><ul><li><a href="#31-electric-motors-and-servos" class="table-of-contents__link toc-highlight">3.1 Electric Motors and Servos</a></li><li><a href="#32-hydraulic-and-pneumatic-systems" class="table-of-contents__link toc-highlight">3.2 Hydraulic and Pneumatic Systems</a></li><li><a href="#33-advanced-actuation-technologies" class="table-of-contents__link toc-highlight">3.3 Advanced Actuation Technologies</a></li><li><a href="#34-joint-design-and-kinematics" class="table-of-contents__link toc-highlight">3.4 Joint Design and Kinematics</a></li><li><a href="#35-movement-control-programming" class="table-of-contents__link toc-highlight">3.5 Movement Control Programming</a></li></ul></li><li><a href="#chapter-4-control-systems-and-decision-making" class="table-of-contents__link toc-highlight">Chapter 4: Control Systems and Decision Making</a><ul><li><a href="#41-robot-operating-system-ros" class="table-of-contents__link toc-highlight">4.1 Robot Operating System (ROS)</a></li><li><a href="#42-behavior-trees-and-decision-making" class="table-of-contents__link toc-highlight">4.2 Behavior Trees and Decision Making</a></li><li><a href="#43-state-machines-and-sequential-logic" class="table-of-contents__link toc-highlight">4.3 State Machines and Sequential Logic</a></li><li><a href="#44-real-time-control-systems" class="table-of-contents__link toc-highlight">4.4 Real-time Control Systems</a></li><li><a href="#45-error-handling-and-recovery" class="table-of-contents__link toc-highlight">4.5 Error Handling and Recovery</a></li></ul></li><li><a href="#chapter-5-path-planning-and-navigation" class="table-of-contents__link toc-highlight">Chapter 5: Path Planning and Navigation</a><ul><li><a href="#51-mapping-and-localization" class="table-of-contents__link toc-highlight">5.1 Mapping and Localization</a></li><li><a href="#52-global-path-planning" class="table-of-contents__link toc-highlight">5.2 Global Path Planning</a></li><li><a href="#53-local-navigation-and-obstacle-avoidance" class="table-of-contents__link toc-highlight">5.3 Local Navigation and Obstacle Avoidance</a></li><li><a href="#54-navigation-stack-integration" class="table-of-contents__link toc-highlight">5.4 Navigation Stack Integration</a></li><li><a href="#55-advanced-navigation-concepts" class="table-of-contents__link toc-highlight">5.5 Advanced Navigation Concepts</a></li></ul></li><li><a href="#chapter-6-agentic-ai-in-robotics" class="table-of-contents__link toc-highlight">Chapter 6: Agentic AI in Robotics</a><ul><li><a href="#61-introduction-to-ai-agents" class="table-of-contents__link toc-highlight">6.1 Introduction to AI Agents</a></li><li><a href="#62-large-language-models-for-robotics" class="table-of-contents__link toc-highlight">6.2 Large Language Models for Robotics</a></li><li><a href="#63-vision-language-models" class="table-of-contents__link toc-highlight">6.3 Vision-Language Models</a></li><li><a href="#64-agentic-frameworks-for-robotics" class="table-of-contents__link toc-highlight">6.4 Agentic Frameworks for Robotics</a></li><li><a href="#65-learning-and-adaptation" class="table-of-contents__link toc-highlight">6.5 Learning and Adaptation</a></li></ul></li><li><a href="#chapter-7-building-talking-ai-systems" class="table-of-contents__link toc-highlight">Chapter 7: Building Talking AI Systems</a><ul><li><a href="#71-speech-recognition-fundamentals" class="table-of-contents__link toc-highlight">7.1 Speech Recognition Fundamentals</a></li><li><a href="#72-natural-language-understanding" class="table-of-contents__link toc-highlight">7.2 Natural Language Understanding</a></li><li><a href="#73-text-to-speech-systems" class="table-of-contents__link toc-highlight">7.3 Text-to-Speech Systems</a></li><li><a href="#74-conversational-ai-architecture" class="table-of-contents__link toc-highlight">7.4 Conversational AI Architecture</a></li><li><a href="#75-voice-agent-implementation" class="table-of-contents__link toc-highlight">7.5 Voice Agent Implementation</a></li><li><a href="#76-advanced-voice-features" class="table-of-contents__link toc-highlight">7.6 Advanced Voice Features</a></li></ul></li><li><a href="#chapter-8-integration-and-practical-applications" class="table-of-contents__link toc-highlight">Chapter 8: Integration and Practical Applications</a><ul><li><a href="#81-system-integration-patterns" class="table-of-contents__link toc-highlight">8.1 System Integration Patterns</a></li><li><a href="#82-real-world-applications" class="table-of-contents__link toc-highlight">8.2 Real-World Applications</a></li><li><a href="#83-deployment-and-maintenance" class="table-of-contents__link toc-highlight">8.3 Deployment and Maintenance</a></li><li><a href="#84-ethical-considerations" class="table-of-contents__link toc-highlight">8.4 Ethical Considerations</a></li><li><a href="#85-future-trends-and-developments" class="table-of-contents__link toc-highlight">8.5 Future Trends and Developments</a></li></ul></li><li><a href="#appendix" class="table-of-contents__link toc-highlight">Appendix</a><ul><li><a href="#a-programming-resources" class="table-of-contents__link toc-highlight">A. Programming Resources</a></li><li><a href="#b-hardware-specifications" class="table-of-contents__link toc-highlight">B. Hardware Specifications</a></li><li><a href="#c-simulation-and-testing" class="table-of-contents__link toc-highlight">C. Simulation and Testing</a></li><li><a href="#d-community-and-resources" class="table-of-contents__link toc-highlight">D. Community and Resources</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Muhammad Ariyan. Built with Docusaurus.</div></div></div></footer><div class="fubuni-chat-container_yPTy"><div class="fubuni-bubble_rFOH pulse_rMPz" title="Chat with Fubuni">💬</div></div></div>
+</body>
+</html>

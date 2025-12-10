@@ -1,0 +1,28 @@
+{
+  "id": "humanoid-robotics-course/control-systems",
+  "title": "Chapter 4: Control Systems and Decision Making",
+  "description": "Learning Objectives",
+  "source": "@site/docs/humanoid-robotics-course/control-systems.md",
+  "sourceDirName": "humanoid-robotics-course",
+  "slug": "/humanoid-robotics-course/control-systems",
+  "permalink": "/Humanoid-Robotics-Book/docs/humanoid-robotics-course/control-systems",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/humanoid-robotics-course/control-systems.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Chapter 4: Control Systems and Decision Making",
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 3: Actuators and Movement Systems",
+    "permalink": "/Humanoid-Robotics-Book/docs/humanoid-robotics-course/actuators-and-movement"
+  },
+  "next": {
+    "title": "Chapter 5: Path Planning and Navigation",
+    "permalink": "/Humanoid-Robotics-Book/docs/humanoid-robotics-course/path-planning-and-navigation"
+  }
+}
