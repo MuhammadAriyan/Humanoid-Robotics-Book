@@ -1,41 +1,41 @@
-from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware
-import os
-import json
-
-# Create FastAPI app
-app = FastAPI(title="Fubuni Chat API", version="1.0.0")
-
-# Configure CORS for Vercel
-origins = [
-    "https://muhammadariyan.github.io",
-    "https://ary-s-physical-humanoid-robotics.vercel.app",
-]
-
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=origins,
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-
-
-@app.get("/health")
-async def health_check():
-    return {"status": "healthy"}
-
-
-@app.post("/api/chat")
-async def chat_endpoint(request: dict):
-    # Simple response for testing
-    return {
-        "response": "Hello! I'm Fubuni, your robotics assistant. How can I help you today?",
-        "session_id": "test-session",
+def handler(request):
+    """Simple Vercel serverless function"""
+    
+    # Handle CORS
+    headers = {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+        'Access-Control-Allow-Headers': 'Content-Type',
+        'Content-Type': 'application/json'
     }
-
-
-# Vercel serverless entry point
-from mangum import Mangum
-
-handler = Mangum(app)
+    
+    # Handle OPTIONS preflight
+    if request.method == 'OPTIONS':
+        return {
+            'statusCode': 200,
+            'headers': headers,
+            'body': ''
+        }
+    
+    # Health check
+    if request.method == 'GET' and request.path == '/health':
+        return {
+            'statusCode': 200,
+            'headers': headers,
+            'body': '{"status": "healthy"}'
+        }
+    
+    # Chat endpoint
+    if request.method == 'POST' and request.path == '/api/chat':
+        return {
+            'statusCode': 200,
+            'headers': headers,
+            'body': '{"response": "Hello from Fubuni! I\\'m your robotics assistant.", "session_id": "test"}'
+        }
+    
+    # 404 for other routes
+    return {
+        'statusCode': 404,
+        'headers': headers,
+        'body': '{"error": "Not Found"}'
+    }
