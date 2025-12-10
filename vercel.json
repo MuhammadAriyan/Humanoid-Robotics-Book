@@ -1,7 +1,7 @@
 {
   "functions": {
-    "api/test.py": {
-      "runtime": "python3.11"
+    "api/chat.js": {
+      "runtime": "nodejs18.x"
     }
   }
 }
