@@ -1,13 +1,10 @@
 {
   "functions": {
-    "api/index.py": {
+    "api/health.py": {
+      "runtime": "python3.11"
+    },
+    "api/chat.py": {
       "runtime": "python3.11"
     }
-  },
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "api/index.py"
-    }
-  ]
+  }
 }
