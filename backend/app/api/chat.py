@@ -6,7 +6,7 @@ import uuid
 from datetime import datetime
 from ..models import ChatSession, ChatMessage
 from ..api.models import ChatRequest, ChatResponse
-from ..agents.fubuni_agent import fubuni_agent
+from ..agents.fubuni_agent import get_fubuni_agent
 from ..config.database import get_session
 from ..utils.streaming import create_sse_stream
 from ..config.settings import settings
@@ -97,6 +97,7 @@ async def chat_endpoint(
 
     # Process the message with the Fubuni agent
     try:
+        fubuni_agent = get_fubuni_agent()
         agent_response = await fubuni_agent.process_message(
             chat_request.message, chat_session.id
         )
@@ -162,13 +163,17 @@ async def chat_stream_endpoint(
     session.add(user_message)
     session.commit()
 
+    # Capture session ID before session closes
+    session_id = chat_session.id
+
     # Process the message with the Fubuni agent
     try:
         # Create streaming response
         async def generate():
             full_response = ""
+            fubuni_agent = get_fubuni_agent()
             async for chunk in fubuni_agent.process_message_streamed(
-                chat_request.message, chat_session.id
+                chat_request.message, session_id
             ):
                 full_response += chunk
                 async for sse_chunk in create_sse_stream(chunk):

@@ -1,6 +1,5 @@
 import pytest
 from fastapi.testclient import TestClient
-from unittest.mock import AsyncMock, patch
 from app.main import app
 
 
@@ -38,11 +37,11 @@ def test_chat_stream_endpoint_exists(client):
 @pytest.mark.asyncio
 async def test_fubuni_agent_process_message():
     """Test the Fubuni agent's process_message method directly"""
-    from app.agents.fubuni_agent import fubuni_agent
+    from app.agents.fubuni_agent import get_fubuni_agent
 
-    # Mock the agent's run method to avoid API calls
-    with patch.object(fubuni_agent.runner, "run", new=AsyncMock()) as mock_run:
-        mock_run.return_value = type("MockResult", (), {"output": "Test response"})()
+    fubuni_agent = get_fubuni_agent()
+    result = await fubuni_agent.process_message("Hello")
 
-        result = await fubuni_agent.process_message("Test message")
-        assert result == "Test response"
+    # Test that we get a real response
+    assert isinstance(result, str)
+    assert len(result) > 0
