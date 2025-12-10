@@ -1,9 +1,6 @@
 {
   "functions": {
-    "api/health.py": {
-      "runtime": "python3.11"
-    },
-    "api/chat.py": {
+    "api/test.py": {
       "runtime": "python3.11"
     }
   }
