@@ -45,10 +45,34 @@ jobs:
           cd backend
           pip install -r requirements.txt
       
+      - name: Create database tables
+        env:
+          NEON_DATABASE_URL: ${{ secrets.NEON_DATABASE_URL }}
+        run: |
+          cd backend
+          python -c "from app.database.init import create_db_and_tables; create_db_and_tables()"
+      
       - name: Run backend tests
+        env:
+          NEON_DATABASE_URL: ${{ secrets.NEON_DATABASE_URL }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          OPENAI_BASE_URL: https://openrouter.ai/api/v1
+          APP_ENV: production
+          BACKEND_CORS_ORIGINS: ["${{ secrets.FRONTEND_URL }}"]
         run: |
           cd backend
           python -m pytest tests/ -v
+      
+      - name: Install Railway CLI
+        run: npm install -g @railway/cli
+      
+      - name: Deploy to Railway
+        env:
+          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+        run: |
+          cd backend
+          railway login --token $RAILWAY_TOKEN
+          railway up
       
       - name: Backend health check simulation
         run: |
