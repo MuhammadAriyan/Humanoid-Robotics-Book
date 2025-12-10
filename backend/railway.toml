@@ -1,0 +1,19 @@
+[build]
+builder = "nixpacks"
+
+[deploy]
+healthcheckPath = "/health"
+healthcheckTimeout = 100
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 10
+
+[[services]]
+name = "api"
+
+[services.variables]
+APP_ENV = "production"
+PORT = "8000"
+
+[[services.ports]]
+port = 8000
+handlers = ["http"]
