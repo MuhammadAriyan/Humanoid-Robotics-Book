@@ -1,0 +1,57 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/Ary-s-Physical-Humanoid-Robotics/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/Ary-s-Physical-Humanoid-Robotics/docs",
+          "mainDocId": "humanoid-robotics-course/introduction-to-humanoid-robotics",
+          "docs": [
+            {
+              "id": "humanoid-robotics-course/actuators-and-movement",
+              "path": "/Ary-s-Physical-Humanoid-Robotics/docs/humanoid-robotics-course/actuators-and-movement",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "humanoid-robotics-course/control-systems",
+              "path": "/Ary-s-Physical-Humanoid-Robotics/docs/humanoid-robotics-course/control-systems",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "humanoid-robotics-course/introduction-to-humanoid-robotics",
+              "path": "/Ary-s-Physical-Humanoid-Robotics/docs/humanoid-robotics-course/introduction-to-humanoid-robotics",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "humanoid-robotics-course/path-planning-and-navigation",
+              "path": "/Ary-s-Physical-Humanoid-Robotics/docs/humanoid-robotics-course/path-planning-and-navigation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "humanoid-robotics-course/sensors-and-perception",
+              "path": "/Ary-s-Physical-Humanoid-Robotics/docs/humanoid-robotics-course/sensors-and-perception",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "humanoid-robotics-course/textbook-outline",
+              "path": "/Ary-s-Physical-Humanoid-Robotics/docs/humanoid-robotics-course/textbook-outline"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/Ary-s-Physical-Humanoid-Robotics/docs/humanoid-robotics-course/introduction-to-humanoid-robotics",
+                "label": "humanoid-robotics-course/introduction-to-humanoid-robotics"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

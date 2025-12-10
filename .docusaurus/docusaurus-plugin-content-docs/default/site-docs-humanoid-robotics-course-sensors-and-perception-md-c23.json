@@ -1,0 +1,28 @@
+{
+  "id": "humanoid-robotics-course/sensors-and-perception",
+  "title": "Chapter 2: Sensors and Perception Systems",
+  "description": "Learning Objectives",
+  "source": "@site/docs/humanoid-robotics-course/sensors-and-perception.md",
+  "sourceDirName": "humanoid-robotics-course",
+  "slug": "/humanoid-robotics-course/sensors-and-perception",
+  "permalink": "/Ary-s-Physical-Humanoid-Robotics/docs/humanoid-robotics-course/sensors-and-perception",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/humanoid-robotics-course/sensors-and-perception.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Chapter 2: Sensors and Perception Systems",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 1: Introduction to Physical Humanoid Robotics",
+    "permalink": "/Ary-s-Physical-Humanoid-Robotics/docs/humanoid-robotics-course/introduction-to-humanoid-robotics"
+  },
+  "next": {
+    "title": "Chapter 3: Actuators and Movement Systems",
+    "permalink": "/Ary-s-Physical-Humanoid-Robotics/docs/humanoid-robotics-course/actuators-and-movement"
+  }
+}

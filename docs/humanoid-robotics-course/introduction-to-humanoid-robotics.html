@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-humanoid-robotics-course/introduction-to-humanoid-robotics" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Chapter 1: Introduction to Physical Humanoid Robotics | Ary&#x27;s Physical &amp; Humanoid Robotics</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://MuhammadAriyan.github.io/Ary-s-Physical-Humanoid-Robotics/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://MuhammadAriyan.github.io/Ary-s-Physical-Humanoid-Robotics/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://MuhammadAriyan.github.io/Ary-s-Physical-Humanoid-Robotics/docs/humanoid-robotics-course/introduction-to-humanoid-robotics"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Chapter 1: Introduction to Physical Humanoid Robotics | Ary&#x27;s Physical &amp; Humanoid Robotics"><meta data-rh="true" name="description" content="Learning Objectives"><meta data-rh="true" property="og:description" content="Learning Objectives"><link data-rh="true" rel="icon" href="/Ary-s-Physical-Humanoid-Robotics/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://MuhammadAriyan.github.io/Ary-s-Physical-Humanoid-Robotics/docs/humanoid-robotics-course/introduction-to-humanoid-robotics"><link data-rh="true" rel="alternate" href="https://MuhammadAriyan.github.io/Ary-s-Physical-Humanoid-Robotics/docs/humanoid-robotics-course/introduction-to-humanoid-robotics" hreflang="en"><link data-rh="true" rel="alternate" href="https://MuhammadAriyan.github.io/Ary-s-Physical-Humanoid-Robotics/docs/humanoid-robotics-course/introduction-to-humanoid-robotics" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Chapter 1: Introduction to Physical Humanoid Robotics","item":"https://MuhammadAriyan.github.io/Ary-s-Physical-Humanoid-Robotics/docs/humanoid-robotics-course/introduction-to-humanoid-robotics"}]}</script><link rel="stylesheet" href="/Ary-s-Physical-Humanoid-Robotics/assets/css/styles.e960907a.css">
+<script src="/Ary-s-Physical-Humanoid-Robotics/assets/js/runtime~main.8bcb56e6.js" defer="defer"></script>
+<script src="/Ary-s-Physical-Humanoid-Robotics/assets/js/main.e117f404.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/Ary-s-Physical-Humanoid-Robotics/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/Ary-s-Physical-Humanoid-Robotics/"><div class="navbar__logo"><img src="/Ary-s-Physical-Humanoid-Robotics/img/logo.svg" alt="Ary&#x27;s Physical Humanoid Robotics Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/Ary-s-Physical-Humanoid-Robotics/img/logo.svg" alt="Ary&#x27;s Physical Humanoid Robotics Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Ary&#x27;s Physical Humanoid Robotics</b></a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/MuhammadAriyan/Ary-s-Physical-Humanoid-Robotics" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" href="/Ary-s-Physical-Humanoid-Robotics/docs/humanoid-robotics-course/introduction-to-humanoid-robotics"><span title="Chapter 1: Introduction to Physical Humanoid Robotics" class="linkLabel_WmDU">Chapter 1: Introduction to Physical Humanoid Robotics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/Ary-s-Physical-Humanoid-Robotics/docs/humanoid-robotics-course/sensors-and-perception"><span title="Chapter 2: Sensors and Perception Systems" class="linkLabel_WmDU">Chapter 2: Sensors and Perception Systems</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/Ary-s-Physical-Humanoid-Robotics/docs/humanoid-robotics-course/actuators-and-movement"><span title="Chapter 3: Actuators and Movement Systems" class="linkLabel_WmDU">Chapter 3: Actuators and Movement Systems</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/Ary-s-Physical-Humanoid-Robotics/docs/humanoid-robotics-course/control-systems"><span title="Chapter 4: Control Systems and Decision Making" class="linkLabel_WmDU">Chapter 4: Control Systems and Decision Making</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/Ary-s-Physical-Humanoid-Robotics/docs/humanoid-robotics-course/path-planning-and-navigation"><span title="Chapter 5: Path Planning and Navigation" class="linkLabel_WmDU">Chapter 5: Path Planning and Navigation</span></a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/Ary-s-Physical-Humanoid-Robotics/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Chapter 1: Introduction to Physical Humanoid Robotics</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Chapter 1: Introduction to Physical Humanoid Robotics</h1></header>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="learning-objectives">Learning Objectives<a href="#learning-objectives" class="hash-link" aria-label="Direct link to Learning Objectives" title="Direct link to Learning Objectives" translate="no">​</a></h2>
+<p>By the end of this chapter, you will be able to:</p>
+<ul>
+<li class="">Define humanoid robots and understand their unique design challenges</li>
+<li class="">Identify the key components of physical humanoid robots</li>
+<li class="">Understand the fundamental differences between humanoid and other robot types</li>
+<li class="">Recognize the interdisciplinary nature of humanoid robotics</li>
+<li class="">Analyze real-world applications and ethical considerations</li>
+<li class="">Apply mathematical foundations for humanoid robot analysis</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="11-definition-and-classification">1.1 Definition and Classification<a href="#11-definition-and-classification" class="hash-link" aria-label="Direct link to 1.1 Definition and Classification" title="Direct link to 1.1 Definition and Classification" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="111-formal-definition">1.1.1 Formal Definition<a href="#111-formal-definition" class="hash-link" aria-label="Direct link to 1.1.1 Formal Definition" title="Direct link to 1.1.1 Formal Definition" translate="no">​</a></h3>
+<p>A humanoid robot is a robotic system designed to emulate human morphology and capabilities, characterized by bipedal locomotion, upper limb dexterity, and human-like interaction modalities. Unlike industrial robots that optimize for precision and speed, humanoid robots aim to operate in human environments and interact with people naturally.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="112-key-characteristics">1.1.2 Key Characteristics<a href="#112-key-characteristics" class="hash-link" aria-label="Direct link to 1.1.2 Key Characteristics" title="Direct link to 1.1.2 Key Characteristics" translate="no">​</a></h3>
+<p><strong>Structural Characteristics:</strong></p>
+<ul>
+<li class=""><strong>Anthropomorphic Configuration</strong>: Head, torso, bilateral upper limbs, bilateral lower limbs</li>
+<li class=""><strong>Bipedal Locomotion</strong>: Walking on two legs like humans</li>
+<li class=""><strong>Dexterous Manipulation</strong>: Hands capable of grasping and fine motor skills</li>
+<li class=""><strong>Human Interaction</strong>: Designed for social interaction and communication</li>
+</ul>
+<p><strong>Functional Characteristics:</strong></p>
+<ul>
+<li class=""><strong>Environmental Adaptability</strong>: Can navigate human-scale environments</li>
+<li class=""><strong>Task Flexibility</strong>: Capable of diverse manipulation and locomotion tasks</li>
+<li class=""><strong>Social Navigation</strong>: Can operate safely around humans</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="113-technical-classification-matrix">1.1.3 Technical Classification Matrix<a href="#113-technical-classification-matrix" class="hash-link" aria-label="Direct link to 1.1.3 Technical Classification Matrix" title="Direct link to 1.1.3 Technical Classification Matrix" translate="no">​</a></h3>
+<p>| Classification | Mass Range | DOF Range | Power Range | Application Domain |
+|---------------|-------------|------------|------------------|
+| Research | 50-100kg | 25-35 DOF | 2000-5000W | Algorithm development |
+| Service | 30-80kg | 40-60 DOF | 500-2000W | Commercial applications |
+| Social | 10-40kg | 15-25 DOF | 100-500W | Human interaction |</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="12-mathematical-foundations">1.2 Mathematical Foundations<a href="#12-mathematical-foundations" class="hash-link" aria-label="Direct link to 1.2 Mathematical Foundations" title="Direct link to 1.2 Mathematical Foundations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="121-kinematic-chains">1.2.1 Kinematic Chains<a href="#121-kinematic-chains" class="hash-link" aria-label="Direct link to 1.2.1 Kinematic Chains" title="Direct link to 1.2.1 Kinematic Chains" translate="no">​</a></h3>
+<p>Humanoid robots can be modeled as kinematic chains with the robot configuration represented as:</p>
+<p><strong>Configuration Space:</strong>
+The complete set of all possible robot configurations, divided into collision-free space and obstacle space.</p>
+<p><strong>Degrees of Freedom Analysis:</strong></p>
+<ul>
+<li class=""><strong>Lower Body Kinematics</strong>: Legs typically 6 DOF each (3 DOF hip, 1 DOF knee, 2 DOF ankle)</li>
+<li class=""><strong>Upper Body Kinematics</strong>: Arms typically 7 DOF each (3 DOF shoulder, 1 DOF elbow, 3 DOF wrist)</li>
+<li class=""><strong>Total System</strong>: 40-50 DOF for typical humanoid configuration</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="122-dynamic-modeling">1.2.2 Dynamic Modeling<a href="#122-dynamic-modeling" class="hash-link" aria-label="Direct link to 1.2.2 Dynamic Modeling" title="Direct link to 1.2.2 Dynamic Modeling" translate="no">​</a></h3>
+<p>The dynamic model relates joint torques to robot motion and energy. For detailed mathematical derivations, students should refer to classical mechanics and robotics textbooks such as Springer Handbook of Robotics.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="13-core-systems-architecture">1.3 Core Systems Architecture<a href="#13-core-systems-architecture" class="hash-link" aria-label="Direct link to 1.3 Core Systems Architecture" title="Direct link to 1.3 Core Systems Architecture" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="131-perception-system">1.3.1 Perception System<a href="#131-perception-system" class="hash-link" aria-label="Direct link to 1.3.1 Perception System" title="Direct link to 1.3.1 Perception System" translate="no">​</a></h3>
+<p>Processes environmental data through vision, audio, touch, and balance sensors to understand the world.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="132-control-system">1.3.2 Control System<a href="#132-control-system" class="hash-link" aria-label="Direct link to 1.3.2 Control System" title="Direct link to 1.3.2 Control System" translate="no">​</a></h3>
+<p>Manages motion, balance, gait generation, and manipulation through hierarchical control architectures.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="133-actuation-system">1.3.3 Actuation System<a href="#133-actuation-system" class="hash-link" aria-label="Direct link to 1.3.3 Actuation System" title="Direct link to 1.3.3 Actuation System" translate="no">​</a></h3>
+<p>Provides physical movement through motors, hydraulics, and artificial muscles with precise joint control.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="14-performance-metrics-and-evaluation-criteria">1.4 Performance Metrics and Evaluation Criteria<a href="#14-performance-metrics-and-evaluation-criteria" class="hash-link" aria-label="Direct link to 1.4 Performance Metrics and Evaluation Criteria" title="Direct link to 1.4 Performance Metrics and Evaluation Criteria" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="141-key-performance-indicators">1.4.1 Key Performance Indicators<a href="#141-key-performance-indicators" class="hash-link" aria-label="Direct link to 1.4.1 Key Performance Indicators" title="Direct link to 1.4.1 Key Performance Indicators" translate="no">​</a></h3>
+<p><strong>Efficiency Metrics:</strong></p>
+<ul>
+<li class="">Path length ratio</li>
+<li class="">Energy consumption</li>
+<li class="">Success rate</li>
+<li class="">Planning time</li>
+</ul>
+<p><strong>Safety Metrics:</strong></p>
+<ul>
+<li class="">Minimum obstacle distance</li>
+<li class="">Fall incidents</li>
+<li class="">Emergency stops</li>
+<li class="">Human comfort</li>
+</ul>
+<p><strong>Human-like Metrics:</strong></p>
+<ul>
+<li class="">Path similarity</li>
+<li class="">Speed profiles</li>
+<li class="">Personal space adherence</li>
+<li class="">Predictability</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="142-evaluation-frameworks">1.4.2 Evaluation Frameworks<a href="#142-evaluation-frameworks" class="hash-link" aria-label="Direct link to 1.4.2 Evaluation Frameworks" title="Direct link to 1.4.2 Evaluation Frameworks" translate="no">​</a></h3>
+<p><strong>Standard Test Cases:</strong></p>
+<ul>
+<li class="">Simple navigation in open environments</li>
+<li class="">Complex navigation in cluttered, dynamic spaces</li>
+<li class="">Social navigation in crowded environments</li>
+<li class="">Multi-story navigation with stairs, elevators, ramps</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="15-applications-and-impact-assessment">1.5 Applications and Impact Assessment<a href="#15-applications-and-impact-assessment" class="hash-link" aria-label="Direct link to 1.5 Applications and Impact Assessment" title="Direct link to 1.5 Applications and Impact Assessment" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="151-healthcare-applications">1.5.1 Healthcare Applications<a href="#151-healthcare-applications" class="hash-link" aria-label="Direct link to 1.5.1 Healthcare Applications" title="Direct link to 1.5.1 Healthcare Applications" translate="no">​</a></h3>
+<p><strong>Assistive Robotics:</strong></p>
+<ul>
+<li class="">Patient monitoring and assistance</li>
+<li class="">Surgical procedure support</li>
+<li class="">Rehabilitation therapy delivery</li>
+<li class="">Elderly care augmentation</li>
+</ul>
+<p><strong>Economic Impact:</strong></p>
+<ul>
+<li class="">Projected market size: $12.8B by 2030</li>
+<li class="">Cost reduction: 30-40% in healthcare operations</li>
+<li class="">Productivity improvement: 2.3× for care providers</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="152-industrial-applications">1.5.2 Industrial Applications<a href="#152-industrial-applications" class="hash-link" aria-label="Direct link to 1.5.2 Industrial Applications" title="Direct link to 1.5.2 Industrial Applications" translate="no">​</a></h3>
+<p><strong>Manufacturing Integration:</strong></p>
+<ul>
+<li class="">Collaborative assembly operations</li>
+<li class="">Quality inspection and testing</li>
+<li class="">Material handling and logistics</li>
+<li class="">Maintenance and repair operations</li>
+</ul>
+<p><strong>Performance Metrics:</strong></p>
+<ul>
+<li class="">Payload capacity: 5-20kg</li>
+<li class="">Positioning accuracy: ±1.5mm</li>
+<li class="">Operation time: 8+ hours continuous</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="153-service-applications">1.5.3 Service Applications<a href="#153-service-applications" class="hash-link" aria-label="Direct link to 1.5.3 Service Applications" title="Direct link to 1.5.3 Service Applications" translate="no">​</a></h3>
+<p><strong>Commercial Deployment:</strong></p>
+<ul>
+<li class="">Customer service and assistance</li>
+<li class="">Hospitality and retail operations</li>
+<li class="">Educational and entertainment applications</li>
+<li class="">Domestic assistance and support</li>
+</ul>
+<p><strong>Market Leaders:</strong></p>
+<ul>
+<li class="">Major technology companies deploying thousands of service robots</li>
+<li class="">Growing adoption in hospitality, retail, and healthcare sectors</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="16-ethical-and-social-considerations">1.6 Ethical and Social Considerations<a href="#16-ethical-and-social-considerations" class="hash-link" aria-label="Direct link to 1.6 Ethical and Social Considerations" title="Direct link to 1.6 Ethical and Social Considerations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="161-safety-framework">1.6.1 Safety Framework<a href="#161-safety-framework" class="hash-link" aria-label="Direct link to 1.6.1 Safety Framework" title="Direct link to 1.6.1 Safety Framework" translate="no">​</a></h3>
+<p><strong>Physical Safety:</strong></p>
+<ul>
+<li class="">Impact force limits: &lt;500N for human-safe interaction</li>
+<li class="">Maximum velocity: &lt;2m/s in human proximity</li>
+<li class="">Emergency stopping time: &lt;0.5s</li>
+<li class="">Safety monitoring systems</li>
+</ul>
+<p><strong>Reliability Requirements:</strong></p>
+<ul>
+<li class="">Mean time between failures: &gt;1000 hours</li>
+<li class="">Diagnostic coverage: &gt;90% of critical components</li>
+<li class="">Graceful degradation strategies</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="162-economic-and-social-impact">1.6.2 Economic and Social Impact<a href="#162-economic-and-social-impact" class="hash-link" aria-label="Direct link to 1.6.2 Economic and Social Impact" title="Direct link to 1.6.2 Economic and Social Impact" translate="no">​</a></h3>
+<p><strong>Employment Considerations:</strong></p>
+<ul>
+<li class="">Job displacement vs. job creation balance</li>
+<li class="">Workforce transition requirements</li>
+<li class="">Economic inequality mitigation</li>
+</ul>
+<p><strong>Cultural Adaptation:</strong></p>
+<ul>
+<li class="">Cross-cultural interaction protocols</li>
+<li class="">Regional regulatory compliance</li>
+<li class="">Social acceptance strategies</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="17-future-directions-and-research-opportunities">1.7 Future Directions and Research Opportunities<a href="#17-future-directions-and-research-opportunities" class="hash-link" aria-label="Direct link to 1.7 Future Directions and Research Opportunities" title="Direct link to 1.7 Future Directions and Research Opportunities" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="171-emerging-technologies">1.7.1 Emerging Technologies<a href="#171-emerging-technologies" class="hash-link" aria-label="Direct link to 1.7.1 Emerging Technologies" title="Direct link to 1.7.1 Emerging Technologies" translate="no">​</a></h3>
+<p><strong>Artificial Intelligence Integration:</strong></p>
+<ul>
+<li class="">Deep learning for perception and control</li>
+<li class="">Reinforcement learning for adaptive behavior</li>
+<li class="">Neural network-based motion planning</li>
+<li class="">Cognitive architectures for decision making</li>
+</ul>
+<p><strong>Advanced Materials and Actuation:</strong></p>
+<ul>
+<li class="">Soft robotics and bio-inspired actuation</li>
+<li class="">Shape memory alloys and electroactive polymers</li>
+<li class="">Energy harvesting and power management</li>
+<li class="">Lightweight composite materials</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="172-capstone-project-areas">1.7.2 Capstone Project Areas<a href="#172-capstone-project-areas" class="hash-link" aria-label="Direct link to 1.7.2 Capstone Project Areas" title="Direct link to 1.7.2 Capstone Project Areas" translate="no">​</a></h3>
+<p><strong>Human-Robot Interaction:</strong></p>
+<ul>
+<li class="">Natural communication and collaboration</li>
+<li class="">Adaptive locomotion and learning-based gait optimization</li>
+<li class="">Multi-robot coordination and swarm behaviors</li>
+<li class="">Assistive robotics for healthcare and elderly care</li>
+</ul>
+<p><strong>Research Opportunities:</strong></p>
+<ul>
+<li class="">Multi-modal sensor fusion and environmental understanding</li>
+<li class="">Real-time adaptation and learning systems</li>
+<li class="">Human-centered design and usability engineering</li>
+<li class="">Ethical frameworks for responsible deployment</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="chapter-summary">Chapter Summary<a href="#chapter-summary" class="hash-link" aria-label="Direct link to Chapter Summary" title="Direct link to Chapter Summary" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="key-concepts">Key Concepts<a href="#key-concepts" class="hash-link" aria-label="Direct link to Key Concepts" title="Direct link to Key Concepts" translate="no">​</a></h3>
+<ol>
+<li class=""><strong>Anthropomorphic Design</strong>: Human-like structural and behavioral characteristics</li>
+<li class=""><strong>Mathematical Foundations</strong>: Kinematic chains, dynamic modeling, configuration space analysis</li>
+<li class=""><strong>System Integration</strong>: Coordinated perception, control, and actuation systems</li>
+<li class=""><strong>Performance Evaluation</strong>: Comprehensive metrics for safety, efficiency, and human-likeness</li>
+<li class=""><strong>Ethical Considerations</strong>: Safety frameworks and societal impact assessment</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="key-terminology">Key Terminology<a href="#key-terminology" class="hash-link" aria-label="Direct link to Key Terminology" title="Direct link to Key Terminology" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Degrees of Freedom (DOF)</strong>: Independent movement capabilities</li>
+<li class=""><strong>Configuration Space</strong>: Mathematical representation of all possible robot configurations</li>
+<li class=""><strong>Anthropomorphism</strong>: Human-like structural and behavioral characteristics</li>
+<li class=""><strong>Hierarchical Control</strong>: Multi-level control architecture for complex systems</li>
+<li class=""><strong>Safety-Critical Systems</strong>: Fail-safe control architectures and emergency protocols</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="further-reading">Further Reading<a href="#further-reading" class="hash-link" aria-label="Direct link to Further Reading" title="Direct link to Further Reading" translate="no">​</a></h3>
+<ol>
+<li class=""><strong>Springer Handbook of Robotics</strong> - Siciliano &amp; Khatib (Eds.)</li>
+<li class=""><strong>Planning Algorithms</strong> - LaValle (Cambridge University Press)</li>
+<li class=""><strong>Probabilistic Robotics</strong> - Thrun, Burgard &amp; Fox (MIT Press)</li>
+<li class=""><strong>Modern Robotics</strong> - Corke (Springer)</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-set">Problem Set<a href="#problem-set" class="hash-link" aria-label="Direct link to Problem Set" title="Direct link to Problem Set" translate="no">​</a></h3>
+<p><strong>Problem 1.1:</strong> Calculate the configuration space dimension for a humanoid robot with 3 DOF head, 14 DOF arms (7 each), and 12 DOF legs (6 each).</p>
+<p><strong>Problem 1.2:</strong> Compare the energy efficiency of walking vs. running for a humanoid robot, given the metabolic cost models for bipedal locomotion.</p>
+<p><strong>Problem 1.3:</strong> Design a safety evaluation framework for a humanoid robot operating in a crowded environment, considering both physical safety and psychological comfort.</p>
+<p><strong>Problem 1.4:</strong> Analyze the trade-offs between electric and hydraulic actuation systems for a specific humanoid robot application.</p>
+<p><strong>Problem 1.5:</strong> Propose a research methodology for evaluating human-robot interaction in a real-world setting, including appropriate metrics and ethical considerations.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="next-chapter-preview">Next Chapter Preview<a href="#next-chapter-preview" class="hash-link" aria-label="Direct link to Next Chapter Preview" title="Direct link to Next Chapter Preview" translate="no">​</a></h3>
+<p>Chapter 2 explores <strong>Humanoid Robot Sensors and Perception Systems</strong>, examining multi-modal sensing architectures, Bayesian perception frameworks, computer vision techniques, and sensor fusion algorithms that enable environmental understanding and human interaction.</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/humanoid-robotics-course/introduction-to-humanoid-robotics.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--next" href="/Ary-s-Physical-Humanoid-Robotics/docs/humanoid-robotics-course/sensors-and-perception"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Chapter 2: Sensors and Perception Systems</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#learning-objectives" class="table-of-contents__link toc-highlight">Learning Objectives</a></li><li><a href="#11-definition-and-classification" class="table-of-contents__link toc-highlight">1.1 Definition and Classification</a><ul><li><a href="#111-formal-definition" class="table-of-contents__link toc-highlight">1.1.1 Formal Definition</a></li><li><a href="#112-key-characteristics" class="table-of-contents__link toc-highlight">1.1.2 Key Characteristics</a></li><li><a href="#113-technical-classification-matrix" class="table-of-contents__link toc-highlight">1.1.3 Technical Classification Matrix</a></li></ul></li><li><a href="#12-mathematical-foundations" class="table-of-contents__link toc-highlight">1.2 Mathematical Foundations</a><ul><li><a href="#121-kinematic-chains" class="table-of-contents__link toc-highlight">1.2.1 Kinematic Chains</a></li><li><a href="#122-dynamic-modeling" class="table-of-contents__link toc-highlight">1.2.2 Dynamic Modeling</a></li></ul></li><li><a href="#13-core-systems-architecture" class="table-of-contents__link toc-highlight">1.3 Core Systems Architecture</a><ul><li><a href="#131-perception-system" class="table-of-contents__link toc-highlight">1.3.1 Perception System</a></li><li><a href="#132-control-system" class="table-of-contents__link toc-highlight">1.3.2 Control System</a></li><li><a href="#133-actuation-system" class="table-of-contents__link toc-highlight">1.3.3 Actuation System</a></li></ul></li><li><a href="#14-performance-metrics-and-evaluation-criteria" class="table-of-contents__link toc-highlight">1.4 Performance Metrics and Evaluation Criteria</a><ul><li><a href="#141-key-performance-indicators" class="table-of-contents__link toc-highlight">1.4.1 Key Performance Indicators</a></li><li><a href="#142-evaluation-frameworks" class="table-of-contents__link toc-highlight">1.4.2 Evaluation Frameworks</a></li></ul></li><li><a href="#15-applications-and-impact-assessment" class="table-of-contents__link toc-highlight">1.5 Applications and Impact Assessment</a><ul><li><a href="#151-healthcare-applications" class="table-of-contents__link toc-highlight">1.5.1 Healthcare Applications</a></li><li><a href="#152-industrial-applications" class="table-of-contents__link toc-highlight">1.5.2 Industrial Applications</a></li><li><a href="#153-service-applications" class="table-of-contents__link toc-highlight">1.5.3 Service Applications</a></li></ul></li><li><a href="#16-ethical-and-social-considerations" class="table-of-contents__link toc-highlight">1.6 Ethical and Social Considerations</a><ul><li><a href="#161-safety-framework" class="table-of-contents__link toc-highlight">1.6.1 Safety Framework</a></li><li><a href="#162-economic-and-social-impact" class="table-of-contents__link toc-highlight">1.6.2 Economic and Social Impact</a></li></ul></li><li><a href="#17-future-directions-and-research-opportunities" class="table-of-contents__link toc-highlight">1.7 Future Directions and Research Opportunities</a><ul><li><a href="#171-emerging-technologies" class="table-of-contents__link toc-highlight">1.7.1 Emerging Technologies</a></li><li><a href="#172-capstone-project-areas" class="table-of-contents__link toc-highlight">1.7.2 Capstone Project Areas</a></li></ul></li><li><a href="#chapter-summary" class="table-of-contents__link toc-highlight">Chapter Summary</a><ul><li><a href="#key-concepts" class="table-of-contents__link toc-highlight">Key Concepts</a></li><li><a href="#key-terminology" class="table-of-contents__link toc-highlight">Key Terminology</a></li><li><a href="#further-reading" class="table-of-contents__link toc-highlight">Further Reading</a></li><li><a href="#problem-set" class="table-of-contents__link toc-highlight">Problem Set</a></li><li><a href="#next-chapter-preview" class="table-of-contents__link toc-highlight">Next Chapter Preview</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Muhammad Ariyan. Built with Docusaurus.</div></div></div></footer><div class="fubuni-chat-container_yPTy"><div class="fubuni-bubble_rFOH pulse_rMPz" title="Chat with Fubuni">💬</div></div></div>
+</body>
+</html>
