@@ -1,9 +1,13 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from .config.settings import settings
-from .api import chat, test_chat
-import json
+import sys
 import os
+import json
+
+# Add backend to path
+sys.path.append("./backend")
+
+from backend.app.api import chat, test_chat
 
 # Create FastAPI app
 app = FastAPI(title="Fubuni Chat API", version="1.0.0")
@@ -44,9 +48,3 @@ async def health_check():
 from mangum import Mangum
 
 handler = Mangum(app)
-
-# For local testing
-if __name__ == "__main__":
-    import uvicorn
-
-    uvicorn.run(app, host="0.0.0.0", port=8000)

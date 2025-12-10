@@ -2,22 +2,22 @@
   "version": 2,
   "builds": [
     {
-      "src": "backend/app/main.py",
+      "src": "api/index.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "backend/app/main.py"
+      "dest": "api/index.py"
     },
     {
       "src": "/health",
-      "dest": "backend/app/main.py"
+      "dest": "api/index.py"
     },
     {
       "src": "/(.*)",
-      "dest": "backend/app/main.py"
+      "dest": "api/index.py"
     }
   ],
   "env": {

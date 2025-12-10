@@ -3,7 +3,7 @@ import FubuniChat from '../../components/FubuniChat/FubuniChat';
 
 const FubuniChatInjector = () => {
   const backendUrl = process.env.NODE_ENV === 'production' 
-    ? process.env.REACT_APP_BACKEND_URL || 'https://your-backend-url.railway.app'
+    ? 'https://your-app-name.vercel.app'  // Replace with your actual Vercel URL
     : 'http://localhost:8000';
   
   return <FubuniChat backendUrl={backendUrl} />;
